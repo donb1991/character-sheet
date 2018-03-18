@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports = function(environment) {
+module.exports = function(environment) {  
   let ENV = {
     modulePrefix: 'charater-sheet',
     environment,
@@ -41,6 +41,11 @@ module.exports = function(environment) {
 
     ENV.APP.rootElement = '#ember-testing';
     ENV.APP.autoboot = false;
+
+    ENV['ember-cli-mirage'] = {
+      enabled: true,
+      autostart: true
+    };
   }
 
   if (environment === 'production') {
