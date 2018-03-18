@@ -18,6 +18,13 @@ module.exports = {
     browser: true
   },
   rules: {
+    'indent': ['error', 2],
+    'object-curly-spacing': ["error", 'always'],
+    'comma-dangle': ['error', 'never'],
+    'eol-last': ['error', 'always'],
+    'quotes': ['error', 'single'],
+    'semi': ['error', 'always'],
+    'no-multiple-empty-lines': ['error', { 'max': 1 }]
   },
   overrides: [
     // node files
