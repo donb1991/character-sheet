@@ -1,9 +1,18 @@
-<form {{action 'authenticate' on='submit'}}>
-  <label for="identification">Login</label>
-  {{input id='identification' placeholder='Enter Login' value=identification}}
-  <label for="password">Password</label>
-  {{input id='password' placeholder='Enter Password' type='password' value=password}}
-  <button type="submit">Login</button>
+<form {{action "authenticate" on="submit"}}>
+  <label>Login
+    {{input placeholder="Enter User Name"
+            value=identification
+            data-test-selector="identification"}}
+  </label>
+
+  <label>Password
+    {{input placeholder="Enter Password"
+            type="password"
+            value=password
+            data-test-selector="password"}}
+  </label>
+
+  <button data-test-action="login" type="submit">Login</button>
   {{#if errorMessage}}
     <p>{{errorMessage}}</p>
   {{/if}}
