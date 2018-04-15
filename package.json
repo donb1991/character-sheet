@@ -1,8 +1,8 @@
 {
-  "name": "charater-sheet",
+  "name": "character-sheet",
   "version": "0.0.0",
   "private": true,
-  "description": "Small description for charater-sheet goes here",
+  "description": "Small description for character-sheet goes here",
   "license": "MIT",
   "author": "",
   "directories": {

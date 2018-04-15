@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {  
   let ENV = {
-    modulePrefix: 'charater-sheet',
+    modulePrefix: 'character-sheet',
     environment,
     rootURL: '/',
     locationType: 'auto',
