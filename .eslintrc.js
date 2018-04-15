@@ -24,7 +24,9 @@ module.exports = {
     'eol-last': ['error', 'always'],
     'quotes': ['error', 'single'],
     'semi': ['error', 'always'],
-    'no-multiple-empty-lines': ['error', { 'max': 1 }]
+    'no-multiple-empty-lines': ['error', { 'max': 1 }],
+    'max-len': ['error', { 'code': 120 }],
+    'comma-spacing': ['error', { 'after': true }]
   },
   overrides: [
     // node files
