@@ -9,7 +9,7 @@ export default Controller.extend({
       let { identification, password } = this.getProperties('identification', 'password');
       try {
         await this.get('session').authenticate('authenticator:oauth2', identification, password);
-        this.transitionToRoute('character');
+        this.transitionToRoute('characters');
       } catch(e) {
         this.set('errorMessage', e.error || e);
       }

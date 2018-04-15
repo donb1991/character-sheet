@@ -12,6 +12,6 @@ module('Acceptance | session', function(hooks) {
     await fillIn('[data-test-selector="password"]', 'secret');
     await click('[data-test-action="login"]');
 
-    assert.equal(currentURL(), '/character');
+    assert.equal(currentURL(), '/characters');
   });
 });
