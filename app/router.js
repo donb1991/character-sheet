@@ -8,7 +8,9 @@ const Router = EmberRouter.extend({
 
 Router.map(function() {
   this.route('login');
-  this.route('characters');
+  this.route('characters', function() {
+    this.route('new');
+  });
 });
 
 export default Router;
