@@ -19,14 +19,15 @@ module.exports = {
   },
   rules: {
     'indent': ['error', 2],
-    'object-curly-spacing': ["error", 'always'],
+    'object-curly-spacing': ['error', 'always'],
     'comma-dangle': ['error', 'never'],
     'eol-last': ['error', 'always'],
     'quotes': ['error', 'single'],
     'semi': ['error', 'always'],
     'no-multiple-empty-lines': ['error', { 'max': 1 }],
     'max-len': ['error', { 'code': 120 }],
-    'comma-spacing': ['error', { 'after': true }]
+    'comma-spacing': ['error', { 'after': true }],
+    'sort-keys': ['error', 'asc', { 'caseSensitive': false, 'natural': true }]
   },
   overrides: [
     // node files

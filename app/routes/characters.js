@@ -3,11 +3,11 @@ import AuthenticatedRouteMixin from 'ember-simple-auth/mixins/authenticated-rout
 import { inject as service } from '@ember/service';
 
 export default Route.extend(AuthenticatedRouteMixin, {
-  session: service(),
-
   model() {
     let userId = this.get('session.session.authenticated.id');
 
     return this.get('store').query('character', { userId });
-  }
+  },
+
+  session: service()
 });

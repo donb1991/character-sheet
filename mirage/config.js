@@ -4,9 +4,9 @@ export default function() {
   this.post('/token', function() {
     return {
       access_token: '1234567890',
+      email: 'don@fake.com',
       id: 1,
-      username: 'Don',
-      email: 'don@fake.com'
+      username: 'Don'
     };
   });
 

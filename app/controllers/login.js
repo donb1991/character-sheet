@@ -1,9 +1,7 @@
 import Controller from '@ember/controller';
 import { inject } from '@ember/service';
 
-export default Controller.extend({
-  session: inject('session'),
-
+export default Controller.extend({  
   actions: { 
     async authenticate() {
       let { identification, password } = this.getProperties('identification', 'password');
@@ -14,5 +12,7 @@ export default Controller.extend({
         this.set('errorMessage', e.error || e);
       }
     }
-  }
+  },
+
+  session: inject('session')
 });
