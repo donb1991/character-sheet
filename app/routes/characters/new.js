@@ -10,8 +10,9 @@ export default Route.extend({
 
   session: service(),
 
-  setupController(controller, model) {
+  setupController(controller, model) {  
     controller.set('model', model);
+    controller.setup();
   },
 
   store: service()

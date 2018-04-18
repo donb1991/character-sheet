@@ -1,40 +1,39 @@
-
 <label>
   Name: 
-  {{input value=character.name}}
+  {{input data-test-selector="name" value=changeset.name}}
 </label>
 <label>
   Class:
-  {{input value=character.class}}
+  {{input data-test-selector="class" value=changeset.class}}
 </label>
 <label>
   Race:
-  {{input value=character.race}}
+  {{input data-test-selector="race" value=changeset.race}}
 </label>
 <label>
   Age:
-  {{input value=character.age type="number"}}
+  {{input data-test-selector="age" value=changeset.age type="number"}}
 </label>
 <label>
   Gender: 
-  {{input value=character.gender}}
+  {{input data-test-selector="gender" value=changeset.gender}}
 </label>
 <label>
   Deity:
-  {{input value=character.deity}}
+  {{input data-test-selector="deity" value=changeset.deity}}
 </label>
 <label>
   Height:
-  {{input value=character.height}}
+  {{input data-test-selector="height" value=changeset.height}}
 </label>
 <label>
   Size:
-  {{input value=character.size}}
+  {{input data-test-selector="size" value=changeset.size}}
 </label>
 <label>
   Weight: 
-  {{input value=character.weight type="number"}}
+  {{input data-test-selector="weight" value=changeset.weight type="number"}}
 </label>
 
-<button {{action "save"}}>Save</button>
+<button data-test-action="save" onclick={{perform save}} disabled={{changeset.isInvalid}}>Save</button>
 
