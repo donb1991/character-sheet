@@ -36,4 +36,7 @@
 </label>
 
 <button data-test-action="save" onclick={{perform save}} disabled={{changeset.isInvalid}}>Save</button>
+{{errors-for changeset=changeset field="name"}}
+{{errors-for changeset=changeset field="class"}}
+{{errors-for changeset=changeset field="race"}}
 
