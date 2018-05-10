@@ -3,7 +3,7 @@ export default function() {
 
   this.post('/token', function() {
     return {
-      access_token: '1234567890',
+      authToken: '1234567890',
       username: 'Don',
       email: 'don@fake.com'
     }
