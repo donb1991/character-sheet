@@ -10,8 +10,7 @@ addons:
   chrome: stable
 
 cache:
-  directories:
-    - $HOME/.npm
+  yarn: true
 
 env:
   global:
@@ -19,8 +18,8 @@ env:
     - JOBS=1
 
 before_install:
-  - npm config set spin false
+  - yarn config set spin false
 
 script:
-  - npm run lint:js
-  - npm test
+  - yarn run lint:js
+  - yarn test
