@@ -14,11 +14,13 @@ export default Controller.extend({
     yield changeset.validate();
     if (changeset.get('isValid')) {
       this.get('changeset').save();
+      this.transitionToRoute('characters');
     }
   }),  
   
   setup() {
     let changeset = new Changeset(this.get('character'), lookupValidator(CharacterValidations), CharacterValidations);
+    changeset.set('creator.id', 1);
     this.set('changeset', changeset);
   }
 });
