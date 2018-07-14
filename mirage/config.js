@@ -1,6 +1,8 @@
 export default function() {
   this.timing = 400;
 
+  this.namespace = '/api/v1';
+
   this.post('/token', function() {
     return {
       access_token: '1234567890',
@@ -8,6 +10,4 @@ export default function() {
       email: 'don@fake.com'
     }
   });
-
-  this.namespace = '/api/v1';
 }
