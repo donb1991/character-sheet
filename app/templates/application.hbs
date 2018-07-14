@@ -1,1 +1,4 @@
+{{#if session.isAuthenticated}}
+  <span data-test-action="sign-out" role="button" {{action "signOut"}}>sign out</span>
+{{/if}}
 {{outlet}}

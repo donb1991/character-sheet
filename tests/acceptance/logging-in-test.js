@@ -10,7 +10,6 @@ module('Acceptance | logging in', function(hooks) {
 
   test('it logs a user in', async function(assert) {
     await visit('/login');
-
     await fillIn('[data-test-selector=username]', 'Dude');
     await fillIn('[data-test-selector=password]', 'secret');
     await click('[data-test-action=login]');
@@ -32,11 +31,20 @@ module('Acceptance | logging in', function(hooks) {
     ));
 
     await visit('/login');
-
     await fillIn('[data-test-selector=username]', 'I');
     await fillIn('[data-test-selector=password]', 'broke it');
     await click('[data-test-action=login]');
 
     assert.ok(find('[data-test-error=login]'));
+  });
+
+  test('A user can sign out', async function(assert) {
+    await visit('/login');
+    await fillIn('[data-test-selector=username]', 'Don');
+    await fillIn('[data-test-selector=password]', 'secert');
+    await click('[data-test-action=login]');
+
+    await click('[data-test-action=sign-out]');
+    assert.ok(currentURL(), '/login');
   });
 });
