@@ -41,6 +41,21 @@
   version "0.15.14"
   resolved "https://registry.yarnpkg.com/@orbit/immutable/-/immutable-0.15.14.tgz#8c6958841d45f7f947282d8f39d88094d20bd152"
 
+"@orbit/indexeddb-bucket@^0.15.18":
+  version "0.15.18"
+  resolved "https://registry.yarnpkg.com/@orbit/indexeddb-bucket/-/indexeddb-bucket-0.15.18.tgz#d266e8a7f6e5084569b0c984bb874ab9b7199e6f"
+  dependencies:
+    "@orbit/core" "^0.15.18"
+    "@orbit/utils" "^0.15.18"
+
+"@orbit/indexeddb@^0.15.18":
+  version "0.15.18"
+  resolved "https://registry.yarnpkg.com/@orbit/indexeddb/-/indexeddb-0.15.18.tgz#0d6d37892225c20a5819f1dd98d821fd5a7df266"
+  dependencies:
+    "@orbit/core" "^0.15.18"
+    "@orbit/data" "^0.15.18"
+    "@orbit/utils" "^0.15.18"
+
 "@orbit/store@^0.15.14":
   version "0.15.18"
   resolved "https://registry.yarnpkg.com/@orbit/store/-/store-0.15.18.tgz#e84b839529b5cab3d3de57166fc4441ccb12c45d"

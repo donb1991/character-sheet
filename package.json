@@ -17,6 +17,8 @@
     "test": "ember test"
   },
   "devDependencies": {
+    "@orbit/indexeddb": "^0.15.18",
+    "@orbit/indexeddb-bucket": "^0.15.18",
     "broccoli-asset-rev": "^2.4.5",
     "ember-ajax": "^3.0.0",
     "ember-cli": "^3.1.4",
