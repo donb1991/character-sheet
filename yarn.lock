@@ -27,6 +27,40 @@
   dependencies:
     "@glimmer/di" "^0.2.0"
 
+"@orbit/coordinator@^0.15.14":
+  version "0.15.18"
+  resolved "https://registry.yarnpkg.com/@orbit/coordinator/-/coordinator-0.15.18.tgz#06818f1daa92364cc9bfe95ae24843efba6b5593"
+
+"@orbit/core@^0.15.14", "@orbit/core@^0.15.18":
+  version "0.15.18"
+  resolved "https://registry.yarnpkg.com/@orbit/core/-/core-0.15.18.tgz#7f09cfd90841f1221f130ecbf0b4374f5faa23ee"
+  dependencies:
+    "@orbit/utils" "^0.15.18"
+
+"@orbit/data@^0.15.14", "@orbit/data@^0.15.18":
+  version "0.15.18"
+  resolved "https://registry.yarnpkg.com/@orbit/data/-/data-0.15.18.tgz#f0c4e60635fb1c15c441020dc64269d7f6506dbb"
+  dependencies:
+    "@orbit/core" "^0.15.18"
+    "@orbit/utils" "^0.15.18"
+
+"@orbit/immutable@^0.15.14":
+  version "0.15.14"
+  resolved "https://registry.yarnpkg.com/@orbit/immutable/-/immutable-0.15.14.tgz#8c6958841d45f7f947282d8f39d88094d20bd152"
+
+"@orbit/store@^0.15.14":
+  version "0.15.18"
+  resolved "https://registry.yarnpkg.com/@orbit/store/-/store-0.15.18.tgz#e84b839529b5cab3d3de57166fc4441ccb12c45d"
+  dependencies:
+    "@orbit/core" "^0.15.18"
+    "@orbit/data" "^0.15.18"
+    "@orbit/immutable" "^0.15.14"
+    "@orbit/utils" "^0.15.18"
+
+"@orbit/utils@^0.15.14", "@orbit/utils@^0.15.18":
+  version "0.15.18"
+  resolved "https://registry.yarnpkg.com/@orbit/utils/-/utils-0.15.18.tgz#43632a1eb602839382f549adcd61a3305031e5fb"
+
 "@sinonjs/formatio@^2.0.0":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@sinonjs/formatio/-/formatio-2.0.0.tgz#84db7e9eb5531df18a8c5e0bfb6e449e55e654b2"
@@ -2735,6 +2769,22 @@ ember-maybe-import-regenerator@^0.1.5, ember-maybe-import-regenerator@^0.1.6:
     broccoli-merge-trees "^1.0.0"
     ember-cli-babel "^6.0.0-beta.4"
     regenerator-runtime "^0.9.5"
+
+ember-orbit@^0.15.6:
+  version "0.15.6"
+  resolved "https://registry.yarnpkg.com/ember-orbit/-/ember-orbit-0.15.6.tgz#599c57998fbbc587297461430d67ec3f82677887"
+  dependencies:
+    "@orbit/coordinator" "^0.15.14"
+    "@orbit/core" "^0.15.14"
+    "@orbit/data" "^0.15.14"
+    "@orbit/immutable" "^0.15.14"
+    "@orbit/store" "^0.15.14"
+    "@orbit/utils" "^0.15.14"
+    broccoli-funnel "^1.2.0"
+    broccoli-merge-trees "^2.0.0"
+    broccoli-replace "^0.12.0"
+    ember-cli-babel "^6.6.0"
+    resolve "^1.3.3"
 
 ember-qunit@^3.3.2:
   version "3.4.0"
